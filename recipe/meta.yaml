@@ -1,6 +1,6 @@
 {% set name = "djangorestframework-gis" %}
-{% set version = "0.11.1" %}
-{% set sha256 = "d9b985b320d6c3e1701d71e09eab37fc90522eeb9399e061e74f9c6cecd4260f" %}
+{% set version = "0.11.2" %}
+{% set sha256 = "c33ce1263ebd0a31bf718e61f3b6f393d1fd513ca73dfb81b7f3be6bf3c56932" %}
 {% set build = 0 %}
 
 package:
