@@ -1,25 +1,24 @@
-{% set name = "djangorestframework-gis" %}
-{% set version = "0.11.2" %}
-{% set sha256 = "c33ce1263ebd0a31bf718e61f3b6f393d1fd513ca73dfb81b7f3be6bf3c56932" %}
+{% set version = "0.12" %}
+{% set sha256 = "80f5e024079f23421c7a34123eb0f50e8a324a61fc1366ed0173aa1a89d766a7" %}
 {% set build = 0 %}
 
 package:
-  name: {{ name|lower }}
+  name: djangorestframework-gis
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/d/djangorestframework-gis/djangorestframework-gis-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - djangorestframework >=3.3
 
   run:
