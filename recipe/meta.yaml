@@ -1,6 +1,4 @@
 {% set version = "0.13" %}
-{% set sha256 = "94901389f32f0b8cdd1133e581f81c745c903449a08c2ddff0fcb2645cca846c" %}
-{% set build = 0 %}
 
 package:
   name: djangorestframework-gis
@@ -8,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/djangorestframework-gis/djangorestframework-gis-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 94901389f32f0b8cdd1133e581f81c745c903449a08c2ddff0fcb2645cca846c
 
 build:
   number: 0
