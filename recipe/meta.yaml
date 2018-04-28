@@ -1,6 +1,4 @@
-{% set version = "0.12" %}
-{% set sha256 = "80f5e024079f23421c7a34123eb0f50e8a324a61fc1366ed0173aa1a89d766a7" %}
-{% set build = 0 %}
+{% set version = "0.13" %}
 
 package:
   name: djangorestframework-gis
@@ -8,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/djangorestframework-gis/djangorestframework-gis-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 94901389f32f0b8cdd1133e581f81c745c903449a08c2ddff0fcb2645cca846c
 
 build:
-  number: {{ build }}
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 

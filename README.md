@@ -14,12 +14,15 @@ Summary: Geographic add-ons for Django Rest Framework
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/djangorestframework-gis-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/djangorestframework-gis-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/djangorestframework-gis-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/djangorestframework-gis-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/djangorestframework-gis/badges/version.svg)](https://anaconda.org/conda-forge/djangorestframework-gis)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/djangorestframework-gis/badges/downloads.svg)](https://anaconda.org/conda-forge/djangorestframework-gis)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-djangorestframework--gis-green.svg)](https://anaconda.org/conda-forge/djangorestframework-gis) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/djangorestframework-gis.svg)](https://anaconda.org/conda-forge/djangorestframework-gis) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/djangorestframework-gis.svg)](https://anaconda.org/conda-forge/djangorestframework-gis) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/djangorestframework-gis.svg)](https://anaconda.org/conda-forge/djangorestframework-gis) |
 
 Installing djangorestframework-gis
 ==================================
