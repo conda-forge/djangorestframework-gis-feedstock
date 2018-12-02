@@ -11,17 +11,16 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
-    - djangorestframework >=3.3
-
+    - djangorestframework
   run:
-    - python
-    - djangorestframework >=3.3
+    - python >=3
+    - djangorestframework
 
 test:
   imports:
