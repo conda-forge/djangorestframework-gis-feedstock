@@ -1,12 +1,12 @@
-{% set version = "0.14" %}
+{% set version = "0.15.0" %}
 
 package:
   name: djangorestframework-gis
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/djangorestframework-gis/djangorestframework-gis-{{ version }}.tar.gz
-  sha256: e645c6c8aedee53ac0a4851abcdf8121fff66813eebae1b040b1ccb941cb248b
+  url: https://github.com/openwisp/django-rest-framework-gis/archive/v{{ version }}.tar.gz
+  sha256: 73c125ee9331b84a1cef364571ba6924c332ca5c00d1bf7483fde0343cf17f6b
 
 build:
   number: 0
@@ -17,10 +17,11 @@ requirements:
   build:
     - python >=3
     - pip
-    - djangorestframework
+    - djangorestframework >=3.10
   run:
     - python >=3
-    - djangorestframework
+    - djangorestframework >=3.10
+    - django >=2.2
 
 test:
   imports:
