@@ -5,11 +5,13 @@ Home: https://github.com/djangonauts/django-rest-framework-gis
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/djangorestframework-gis-feedstock/blob/master/LICENSE.txt)
 
 Summary: Geographic add-ons for Django Rest Framework
 
+Development: https://github.com/djangonauts/django-rest-framework-gis
 
+Documentation: https://github.com/djangonauts/django-rest-framework-gis
 
 Current build status
 ====================
