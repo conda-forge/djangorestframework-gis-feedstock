@@ -1,4 +1,4 @@
-{% set version = "0.15.0" %}
+{% set version = "0.16.0" %}
 
 package:
   name: djangorestframework-gis
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://github.com/openwisp/django-rest-framework-gis/archive/v{{ version }}.tar.gz
-  sha256: 73c125ee9331b84a1cef364571ba6924c332ca5c00d1bf7483fde0343cf17f6b
+  sha256: b405ce48dd2483649e0b730d08f0937a29e442ef0670bb8d2bcd24ae21d11a22
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
     - djangorestframework >=3.10
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/djangonauts/django-rest-framework-gis
-  summary: 'Geographic add-ons for Django Rest Framework'
+  summary: Geographic add-ons for Django Rest Framework
   license: MIT
   license_family: MIT
   license_file: LICENSE
