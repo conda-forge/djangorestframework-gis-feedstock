@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: djangorestframework-gis
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/openwisp/django-rest-framework-gis/archive/v{{ version }}.tar.gz
-  sha256: 48d9bf013903f5d60a8b292e8ed480dd7467662c458a9d2fd8e504605073a193
+  sha256: 4d99d400262f8dd2d24fe634f66f0b967c18fe2db12a5cf88f82781960cd9e09
 
 build:
   number: 0
