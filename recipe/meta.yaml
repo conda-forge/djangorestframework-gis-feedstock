@@ -1,5 +1,5 @@
 {% set name = "djangorestframework-gis" %}
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/djangorestframework-gis-{{ version }}.tar.gz
-  sha256: 921c5adbc9a7c0502c905957a6695b67f55d7bf6582e1ab837888b55a1fce5a6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 84b915503a59263ed9473ecde34b19260c3e9c5c8ebb3aea8d91a67fd39f7215
 
 build:
   number: 0
