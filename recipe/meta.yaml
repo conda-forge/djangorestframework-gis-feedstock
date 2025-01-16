@@ -6,22 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/djangorestframework_gis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djangorestframework_gis-{{ version }}.tar.gz
   sha256: 84b915503a59263ed9473ecde34b19260c3e9c5c8ebb3aea8d91a67fd39f7215
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - djangorestframework >=3.12,<3.16
     - django-filter >=23.5,<25.0
+
 test:
   imports:
     - rest_framework_gis
@@ -29,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/djangonauts/django-rest-framework-gis
