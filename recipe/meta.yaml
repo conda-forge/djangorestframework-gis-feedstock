@@ -17,11 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - setuptools
     - pip
   run:
     - python >={{ python_min }}
     - djangorestframework >=3.12,<3.16
     - django-filter >=23.5,<25.0
+
 test:
   imports:
     - rest_framework_gis
