@@ -1,5 +1,5 @@
 {% set name = "djangorestframework-gis" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djangorestframework_gis-{{ version }}.tar.gz
-  sha256: 702ba9ad44173b7cc70e48c6c84da48c28f6f82612cc901a77fdb54c5c57c971
+  sha256: 649ad0cb361dd85f2113b1796248eb2b198a01fa3d64c5e486106224c0ad51fd
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - django >=4.2
     - python >={{ python_min }}
-    - djangorestframework >=3.12,<3.17
+    - djangorestframework >=3.12,<3.18
     - django-filter >=23.5,<26.0
 
 test:
