@@ -3,15 +3,11 @@ About djangorestframework-gis-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/djangorestframework-gis-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/djangonauts/django-rest-framework-gis
+Home: https://github.com/openwisp/django-rest-framework-gis
 
 Package license: MIT
 
 Summary: Geographic add-ons for Django Rest Framework
-
-Development: https://github.com/djangonauts/django-rest-framework-gis
-
-Documentation: https://github.com/djangonauts/django-rest-framework-gis
 
 Current build status
 ====================
@@ -192,6 +188,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@kwilcox](https://github.com/kwilcox/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
